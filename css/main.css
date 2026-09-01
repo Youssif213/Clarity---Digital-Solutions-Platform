@@ -10,6 +10,31 @@
 .bg-main-light{background-color: var(--main-color-light);}
 .bg-main-dark{background-color: var(--main-color-dark);}
 
+section{
+    padding-block: 100px;
+}
+
+
+
+
+.para-w{
+    max-width: 800px;
+}
+
+
+
+.header > span:first-child{
+    background-color: #FCEEE6;
+}
+h2{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.header .second-span{
+    background-image: linear-gradient(to right, #E9580C, #C2410C);
+    background-clip: text;
+    color: transparent;
+}
 
 /* ------------------------------ Start Navbar ------------------------------ */
 .navbar .navbar-brand i{
@@ -150,7 +175,7 @@
 header{
     padding-top: 73px;
     background-image: linear-gradient(135deg,#FFF8EF 0%,white 50%,#FFF8EF 100%);
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #home .hero-top-span{
@@ -203,6 +228,343 @@ header{
     color: var(--main-color-light);
 }
 
+
+#home .right .all-layering {
+    position: relative;
+    padding: 5px;
+}
+
+#home .right .background-layer {
+    background-color: #F8DACA;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    transform: rotate(3deg);
+}
+
+#home .right .img-holder {
+    position: relative;
+    z-index: 1;
+}
+#home .right i{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#home .right .fa-code{
+    background-image: linear-gradient(135deg, #F98C38, #EB5C11);
+    right: -60px;
+    top: 20px;
+}
+#home .right .fa-mobile{
+    background-image: linear-gradient(135deg, #C6440C, #E7560C);
+}
+@media screen and (min-width: 992px) {
+    .all-layering{
+        width: 100%;
+    }
+}
 /* ------------------------------ End Home Section ------------------------------ */
 
 
+
+
+
+/* ------------------------------ Start Services Section ------------------------------ */
+#services .card div{
+    font-size: 14px;
+}
+#services .card > i{
+    font-size: 1.5rem;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+#services .card > i.fa-code{background-image: linear-gradient(135deg, #E5550C, #C6440D);}
+#services .card > i.fa-mobile{background-image: linear-gradient(135deg, #F98B37, #EC6015);}
+#services .card > i.fa-cloud{background-image: linear-gradient(135deg, #CB4E15, #F48837);}
+#services .card > i.fa-brain{background-image: linear-gradient(135deg,#DF510C 0%,#C3410C 50%,#F08333 100%);}
+#services .card > i.fa-chart-line{background-image: linear-gradient(135deg, #F28535, #CA4C14);}
+#services .card > i.fa-palette{background-image: linear-gradient(135deg, #C7440C, #e25b17);}
+
+#services .card{
+    transition: all 0.3s;
+}
+#services .card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 10px 0px rgba(255, 69, 0, 0.1);
+}
+#services .card:hover i{
+    transform: scale(1.1);
+}
+#services .card > span i{
+    transition: all 0.3s;
+}
+#services .card:hover > span i{
+    transform: translateX(4px);
+}
+
+/* ------------------------------ End Services Section ------------------------------ */
+
+
+
+
+/* ------------------------------ Start Technology Section ------------------------------ */
+#technology .nav-link{
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4A5565;
+    border-radius: 0px;
+    transition: 0.1s all;
+}
+#technology .nav-link:hover{
+    color: var(--main-color-light);
+    border-bottom: 2px solid var(--main-color-light);
+}
+#technology .nav-pills .nav-link.active{
+    background-color: transparent;
+    color: var(--main-color-light);
+    border-bottom: 2px solid var(--main-color-light);
+}
+
+#technology .card i{
+    color: white;
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    /* background-color: red; */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#technology .card span{
+    font-size: 12px;
+    /* background-color: red; */
+}
+
+#technology .card {
+    transition: all 0.3s ease;
+}
+
+#technology .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+#technology .card{background-color: var(--card-bg);}
+#technology .card i{background-color: var(--icon-bg);}
+#technology .card .tags span{
+    background-color: var(--span-bg);
+    color: var(--span-text);
+}
+
+/* Frontend Cards */
+.react-card {
+    --card-bg: #E8F2FE;
+    --icon-bg: #2B7FFF;
+    --span-bg: #DBEAFE;
+    --span-text: #193cb8;
+}
+.next-card {
+    --card-bg: #F6F8F9;
+    --icon-bg: #000000;
+    --span-bg: #F3F4F6;
+    --span-text: #000000;
+}
+.vue-card {
+    --card-bg: #E4FCEC;
+    --icon-bg: #00C950;
+    --span-bg: #DBFCE7;
+    --span-text: #016630;
+}
+.angular-card {
+    --card-bg: #FFF1DF;
+    --icon-bg: #FF6900;
+    --span-bg: #FFEDD4;
+    --span-text: #9f2d00;
+}
+.tailwind-card {
+    --card-bg: #DFFCFF;
+    --icon-bg: #00B8DB;
+    --span-bg: #CEFAFE;
+    --span-text: #005f78;
+}
+.vite-card {
+    --card-bg: #F7EFFF;
+    --icon-bg: #AD46FF;
+    --span-bg: #F3E8FF;
+    --span-text: #6e11b0;
+}
+
+
+/* Backend Cards */
+.node-card {
+    --card-bg: #E7FDEE;
+    --icon-bg: #00A63E;
+    --span-bg: #DBFCE7;
+    --span-text: #016630;
+}
+.python-card {
+    --card-bg: #E6F1FF;
+    --icon-bg: #155DFC;
+    --span-bg: #DBEAFE;
+    --span-text: #193cb8;
+}
+.golang-card {
+    --card-bg: #FFEAEA;
+    --icon-bg: #E7000B;
+    --span-bg: #FFE2E2;
+    --span-text: #9f0712;
+}
+.java-card {
+    --card-bg: #F7EFFF;
+    --icon-bg: #9810FA;
+    --span-bg: #F3E8FF;
+    --span-text: #6e11b0;
+}
+.netcore-card {
+    --card-bg: #E7ECFF;
+    --icon-bg: #4F39F6;
+    --span-bg: #E0E7FF;
+    --span-text: #372aac;
+}
+.ruby-card {
+    --card-bg: #E1FDF7;
+    --icon-bg: #009689;
+    --span-bg: #CBFBF1;
+    --span-text: #005f5a;
+}
+
+
+
+/* Mobile Cards */
+.react-native-card {
+    --card-bg: #E5F0FF;
+    --icon-bg: #2B7FFF;
+    --span-bg: #DBEAFE;
+    --span-text: #193cb8;
+}
+.flutter-card {
+    --card-bg: #DBFBFE;
+    --icon-bg: #00B8DB;
+    --span-bg: #CEFAFE;
+    --span-text: #005f78;
+}
+.ios-card {
+    --card-bg: #F6F7F9;
+    --icon-bg: #364153;
+    --span-bg: #F3F4F6;
+    --span-text: #1e2939;
+}
+.android-card {
+    --card-bg: #EAFCF0;
+    --icon-bg: #00A63E;
+    --span-bg: #DBFCE7;
+    --span-text: #016630;
+}
+.xamarin-card {
+    --card-bg: #F8F1FF;
+    --icon-bg: #9810FA;
+    --span-bg: #F3E8FF;
+    --span-text: #6e11b0;
+}
+.pwa-card {
+    --card-bg: #FFF3E2;
+    --icon-bg: #F54900;
+    --span-bg: #FFEDD4;
+    --span-text: #9f2d00;
+}
+
+
+
+/* Cloud & DevOps Cards */
+.amazon-card {
+    --card-bg: #FFF3E3;
+    --icon-bg: #FF6900;
+    --span-bg: #FFEDD4;
+    --span-text: #9f2d00;
+}
+.microsoft-card {
+    --card-bg: #E6F1FF;
+    --icon-bg: #2B7FFF;
+    --span-bg: #DBEAFE;
+    --span-text: #9f2d00;
+}
+.google-card {
+    --card-bg: #FFEAEA;
+    --icon-bg: #FB2C36;
+    --span-bg: #FFE2E2;
+    --span-text: #9f0712;
+}
+.docker-card {
+    --card-bg: #E6F0FF;
+    --icon-bg: #2B7FFF;
+    --span-bg: #DBEAFE;
+    --span-text: #193cb8;
+}
+.kubernetes-card {
+    --card-bg: #F7EEFF;
+    --icon-bg: #9810FA;
+    --span-bg: #DBEAFE;
+    --span-text: #6e11b0;
+}
+.pipeline-card {
+    --card-bg: #F7F8F9;
+    --icon-bg: #364153;
+    --span-bg: #F3F4F6;
+    --span-text: #1e2939;
+}
+
+
+
+/* Database Cards */
+.postgre-card {
+    --card-bg: #E6F1FE;
+    --icon-bg: #1447E6;
+    --span-bg: #DBEAFE;
+    --span-text: #193cb8;
+}
+.mongo-card {
+    --card-bg: #E8FCEE;
+    --icon-bg: #008236;
+    --span-bg: #DBFCE7;
+    --span-text: #016630;
+}
+.redis-card {
+    --card-bg: #FEEAEA;
+    --icon-bg: #C10007;
+    --span-bg: #FFE2E2;
+    --span-text: #9f0712;
+}
+.mysql-card {
+    --card-bg: #FEFAD3;
+    --icon-bg: #D08700;
+    --span-bg: #FEF9C2;
+    --span-text: #894b00;
+}
+.elasticsearch-card {
+    --card-bg: #F7EFFF;
+    --icon-bg: #9810FA;
+    --span-bg: #F3E8FF;
+    --span-text: #6e11b0;
+}
+.graphql-card {
+    --card-bg: #E8EEFF;
+    --icon-bg: #4F39F6;
+    --span-bg: #E0E7FF;
+    --span-text: #372aac;
+}
+
+/* ------------------------------ End Technology Section ------------------------------ */
