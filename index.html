@@ -17,7 +17,7 @@
 
 
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
     <!-- ------------------------------ Start Navbar ------------------------------ -->
     <nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top z-3">
         <div class="container-fluid">
@@ -27,7 +27,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="#navbar-example">
                 <ul class="navbar-nav me-auto ms-lg-4 mb-lg-0 d-flex gap-3">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
@@ -35,7 +35,7 @@
 
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#services" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Services
                         </a>
@@ -317,8 +317,6 @@
             </div>
         </section>
         <!-- ------------------------------ End Services Section ------------------------------ -->
-
-
 
 
 
@@ -787,6 +785,553 @@
             </div>
         </section>
         <!-- ------------------------------ End Technology Section ------------------------------ -->
+
+
+
+        <!-- ------------------------------ Start Testimonials Section ------------------------------ -->
+        <section id="testimonials">
+            <div class="container-fluid">
+                <div class="header text-center mb-5">
+                    <span class="text-main-light px-3 py-2 rounded-pill d-inline-block"><i class="fa-solid fa-heart me-2"></i> Client Testimonials</span>
+                    <h2 class="fw-bold my-4"><span class="first-span text-main-dark">What Our</span> <span class="second-span">Clients Say</span></h2>
+                    <p class="text-secondary fs-5 para-w m-auto">Don't just take our word for it. Here's what our clients have to say about working with us.</p>
+                </div>
+
+                <div class="content">
+                    <div id="carouselExampleIndicators" class="carousel slide w-75 m-auto" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 3"></button>
+                        </div>
+
+
+                        <div class="carousel-inner shadow mt-5">
+                            <div class="carousel-item active">
+                                <div class="item p-5">
+                                    <div class="for-separator">
+                                        <div class="head d-flex align-items-center justify-content-between">
+                                            <div class="rating d-flex align-items-center gap-3">
+                                                <i class="fa-solid fa-quote-left text-main-light fs-4"></i>
+                                                <div class="stars">
+                                                    <p class="m-0 mb-1">
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                    </p>
+                                                    <p class="text-secondary m-0 fw-semibold">5.0 Rating</p>
+                                                </div>
+                                            </div>
+                                            <span class="text-main-light fw-semibold px-3 py-2 rounded-pill align-self-end"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                                        </div>
+                                        <p class="fs-5 my-4">"Clarity transformed our entire digital presence. Their team's expertise and dedication resulted in a 300% increase in our online sales. Absolutely phenomenal work!"</p>
+                                    </div>
+
+                                    <div class="foot mt-4 d-flex justify-content-between">
+                                        <div class="left d-flex gap-3">
+                                            <div class="pfp position-relative">
+                                                <div class="img-holder"><img src="img/avatar-1-CwUcGkzI.jpg" class="w-100 img-thumbnail rounded-circle" alt=""></div>
+                                                <i class="fa-solid fa-check position-absolute translate-middle"></i>
+                                            </div>
+                                            <div class="pfp-info">
+                                                <h4 class="text-main-dark fs-5 fw-bold mb-1">Ahmed Al-Farsi</h4>
+                                                <p class="my-0 text-secondary">CEO, RetailMax</p>
+                                                <p class="linkedin-verify text-secondary mt-2"><i class="fa-brands fa-linkedin text-main-light"></i> Verified on LinkedIn</p>
+                                            </div>
+                                        </div>
+                                        <div class="right d-flex flex-column justify-content-center">
+                                            <span class="badge fw-bold fs-3">300%</span>
+                                            <span class="align-self-end text-secondary">Growth</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item p-5">
+                                    <div class="for-separator">
+                                        <div class="head d-flex align-items-center justify-content-between">
+                                            <div class="rating d-flex align-items-center gap-3">
+                                                <i class="fa-solid fa-quote-left text-main-light fs-4"></i>
+                                                <div class="stars">
+                                                    <p class="m-0 mb-1">
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                    </p>
+                                                    <p class="text-secondary m-0 fw-semibold">5.0 Rating</p>
+                                                </div>
+                                            </div>
+                                            <span class="text-main-light fw-semibold px-3 py-2 rounded-pill align-self-end"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                                        </div>
+                                        <p class="fs-5 my-4">"The telemedicine platform they built for us has revolutionized how we serve our patients. The security, reliability, and user experience are all top-notch."</p>
+                                    </div>
+
+                                    <div class="foot mt-4 d-flex justify-content-between">
+                                        <div class="left d-flex gap-3">
+                                            <div class="pfp position-relative">
+                                                <div class="img-holder"><img src="img/avatar-2-DvihTPKl.jpg" class="w-100 img-thumbnail rounded-circle" alt=""></div>
+                                                <i class="fa-solid fa-check position-absolute translate-middle"></i>
+                                            </div>
+                                            <div class="pfp-info">
+                                                <h4 class="text-main-dark fs-5 fw-bold mb-1">Dr. Michael Chen</h4>
+                                                <p class="my-0 text-secondary">Director, MedCare</p>
+                                                <p class="linkedin-verify text-secondary mt-2"><i class="fa-brands fa-linkedin text-main-light"></i> Verified on LinkedIn</p>
+                                            </div>
+                                        </div>
+                                        <div class="right d-flex flex-column justify-content-center">
+                                            <span class="badge fw-bold fs-3">100K+</span>
+                                            <span class="align-self-end text-secondary">Patients</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item p-5">
+                                    <div class="for-separator">
+                                        <div class="head d-flex align-items-center justify-content-between">
+                                            <div class="rating d-flex align-items-center gap-3">
+                                                <i class="fa-solid fa-quote-left text-main-light fs-4"></i>
+                                                <div class="stars">
+                                                    <p class="m-0 mb-1">
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                    </p>
+                                                    <p class="text-secondary m-0 fw-semibold">5.0 Rating</p>
+                                                </div>
+                                            </div>
+                                            <span class="text-main-light fw-semibold px-3 py-2 rounded-pill align-self-end"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                                        </div>
+                                        <p class="fs-5 my-4">"Working with Clarity was a game-changer. Their mobile banking app exceeded all our expectations and has processed over $1 billion in transactions."</p>
+                                    </div>
+
+                                    <div class="foot mt-4 d-flex justify-content-between">
+                                        <div class="left d-flex gap-3">
+                                            <div class="pfp position-relative">
+                                                <div class="img-holder"><img src="img/avatar-3-MKRsHcFc.jpg" class="w-100 img-thumbnail rounded-circle" alt=""></div>
+                                                <i class="fa-solid fa-check position-absolute translate-middle"></i>
+                                            </div>
+                                            <div class="pfp-info">
+                                                <h4 class="text-main-dark fs-5 fw-bold mb-1">Eslam Salah</h4>
+                                                <p class="my-0 text-secondary">CTO, FinanceFlow</p>
+                                                <p class="linkedin-verify text-secondary mt-2"><i class="fa-brands fa-linkedin text-main-light"></i> Verified on LinkedIn</p>
+                                            </div>
+                                        </div>
+                                        <div class="right d-flex flex-column justify-content-center">
+                                            <span class="badge fw-bold fs-3">$1B+</span>
+                                            <span class="align-self-end text-secondary">Processed</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item p-5">
+                                    <div class="for-separator">
+                                        <div class="head d-flex align-items-center justify-content-between">
+                                            <div class="rating d-flex align-items-center gap-3">
+                                                <i class="fa-solid fa-quote-left text-main-light fs-4"></i>
+                                                <div class="stars">
+                                                    <p class="m-0 mb-1">
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                    </p>
+                                                    <p class="text-secondary m-0 fw-semibold">5.0 Rating</p>
+                                                </div>
+                                            </div>
+                                            <span class="text-main-light fw-semibold px-3 py-2 rounded-pill align-self-end"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                                        </div>
+                                        <p class="fs-5 my-4">"The AI-powered analytics dashboard they created has given us insights we never had before. Our decision-making process has become so much more data-driven and effective."</p>
+                                    </div>
+
+                                    <div class="foot mt-4 d-flex justify-content-between">
+                                        <div class="left d-flex gap-3">
+                                            <div class="pfp position-relative">
+                                                <div class="img-holder"><img src="img/avatar-4-CDQD_dyw.jpg" class="w-100 img-thumbnail rounded-circle" alt=""></div>
+                                                <i class="fa-solid fa-check position-absolute translate-middle"></i>
+                                            </div>
+                                            <div class="pfp-info">
+                                                <h4 class="text-main-dark fs-5 fw-bold mb-1">James Wilson</h4>
+                                                <p class="my-0 text-secondary">VP of Operations, TechCorp</p>
+                                                <p class="linkedin-verify text-secondary mt-2"><i class="fa-brands fa-linkedin text-main-light"></i> Verified on LinkedIn</p>
+                                            </div>
+                                        </div>
+                                        <div class="right d-flex flex-column justify-content-center">
+                                            <span class="badge fw-bold fs-3">10X</span>
+                                            <span class="align-self-end text-secondary">Insights</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item p-5">
+                                    <div class="for-separator">
+                                        <div class="head d-flex align-items-center justify-content-between">
+                                            <div class="rating d-flex align-items-center gap-3">
+                                                <i class="fa-solid fa-quote-left text-main-light fs-4"></i>
+                                                <div class="stars">
+                                                    <p class="m-0 mb-1">
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                        <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                                    </p>
+                                                    <p class="text-secondary m-0 fw-semibold">5.0 Rating</p>
+                                                </div>
+                                            </div>
+                                            <span class="text-main-light fw-semibold px-3 py-2 rounded-pill align-self-end"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                                        </div>
+                                        <p class="fs-5 my-4">"Their cloud migration service was flawless. Zero downtime, improved performance, and significant cost savings. The team's expertise is unmatched."</p>
+                                    </div>
+
+                                    <div class="foot mt-4 d-flex justify-content-between">
+                                        <div class="left d-flex gap-3">
+                                            <div class="pfp position-relative">
+                                                <div class="img-holder"><img src="img/avatar-4-CDQD_dyw.jpg" class="w-100 img-thumbnail rounded-circle" alt=""></div>
+                                                <i class="fa-solid fa-check position-absolute translate-middle"></i>
+                                            </div>
+                                            <div class="pfp-info">
+                                                <h4 class="text-main-dark fs-5 fw-bold mb-1">Omar Wael</h4>
+                                                <p class="my-0 text-secondary">IT Director, GlobalTech</p>
+                                                <p class="linkedin-verify text-secondary mt-2"><i class="fa-brands fa-linkedin text-main-light"></i> Verified on LinkedIn</p>
+                                            </div>
+                                        </div>
+                                        <div class="right d-flex flex-column justify-content-center">
+                                            <span class="badge fw-bold fs-3">0%</span>
+                                            <span class="align-self-end text-secondary">Downtime</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------------ End Testimonials Section ------------------------------ -->
+
+
+
+        <!-- ------------------------------ Start FAQ Section ------------------------------ -->
+        <section id="faq">
+            <div class="container-fluid">
+                <div class="header text-center mb-5">
+                    <span class="text-main-light px-3 py-2 rounded-pill d-inline-block"><i class="fa-solid fa-circle-question me-2"></i> FAQ</span>
+                    <h2 class="fw-bold my-4"><span class="first-span text-main-dark">Frequently Asked</span> <span class="second-span">Questions</span></h2>
+                    <p class="text-secondary fs-5 para-w m-auto">Find answers to common questions about our services, process, and how we can help transform your business.</p>
+                </div>
+
+                <div class="content w-75 m-auto">
+                    <div class="accordion p-3" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    What services does Clarity offer?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-secondary">We offer a comprehensive range of digital services including web development, mobile applications, cloud 
+                                        solutions, AI & machine learning, digital marketing, and UI/UX design. Our team specializes in creating 
+                                        custom solutions tailored to your specific business needs, from initial concept through to deployment 
+                                        and ongoing support.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How long does a typical project take?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-secondary">
+                                        Project timelines vary based on complexity and scope. A simple website might take 4-6 weeks, while a complex web application or mobile app could take 3-6 months. We provide detailed project timelines during our initial consultation and keep you updated throughout the development process with regular milestones and deliverables.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What is your development process?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="accordion-content text-secondary">
+                                        <p>We follow an agile development methodology that includes:</p>
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex align-items-baseline gap-2">
+                                                <i class="fa-solid fa-check text-main-light"></i>
+                                                <p><strong>Discovery & Planning:</strong> Understanding your requirements and goals</p>
+                                            </li>
+                                            <li class="d-flex align-items-baseline gap-2">
+                                                <i class="fa-solid fa-check text-main-light"></i>
+                                                <p><strong>Design:</strong> Creating wireframes and visual designs</p>
+                                            </li>
+                                            <li class="d-flex align-items-baseline gap-2">
+                                                <i class="fa-solid fa-check text-main-light"></i>
+                                                <p><strong>Development:</strong> Building your solution with regular updates</p>
+                                            </li>
+                                            <li class="d-flex align-items-baseline gap-2">
+                                                <i class="fa-solid fa-check text-main-light"></i>
+                                                <p><strong>Testing:</strong> Rigorous QA and user testing</p>
+                                            </li>
+                                            <li class="d-flex align-items-baseline gap-2">
+                                                <i class="fa-solid fa-check text-main-light"></i>
+                                                <p><strong>Deployment:</strong> Launch and ongoing support</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Do you provide ongoing support and maintainence?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-secondary">Yes! We offer comprehensive support and maintenance packages to ensure your solution continues to perform optimally. This includes bug fixes, security updates, performance optimization, feature enhancements, and technical support. We can customize a maintenance plan that fits your specific needs and budget.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What technologies do you work with?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-secondary">We work with cutting-edge technologies across the full stack. For frontend, we use React, Vue.js, Angular, and Next.js. Our backend expertise includes Node.js, Python, Golang, and Java. We're proficient in cloud platforms like AWS, Azure, and Google Cloud, and work with both SQL and NoSQL databases. We always choose the best technology stack for your specific project requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    How do you ensure project security and data privacy?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-secondary">Security is our top priority. We implement industry-standard security practices including encryption, secure authentication, regular security audits, and compliance with data protection regulations (GDPR, HIPAA, etc.). All our developers sign NDAs, and we use secure development practices throughout the entire project lifecycle. We also provide security documentation and training for your team.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------------ End FAQ Section ------------------------------ -->
+
+
+
+        <!-- ------------------------------ Start Contact Section ------------------------------ -->
+        <section id="contact">
+            <div class="container-fluid">
+                <div class="header text-center mb-5">
+                    <span class="text-main-light px-3 py-2 rounded-pill d-inline-block">
+                        <i class="fa-solid fa-rocket me-2"></i>
+                        Let's Start Your Journey
+                    </span>
+                    <h2 class="fw-bold my-4">
+                        <span class="first-span text-main-dark">Ready to</span><br>
+                        <span class="second-span">Transform?</span>
+                    </h2>
+                    <p class="text-secondary para-w m-auto">Take the first step towards digital excellence. Our experts are ready to turn your vision into reality.</p>
+                </div>
+
+                <div class="content mt-5">
+                    <div class="form m-auto rounded-5 overflow-hidden shadow bg-info">
+                        <div class="row">
+                            <div class="col-lg-8 bg-white">
+                                <div class="left p-5">
+                                    <h3 class="text-main-dark fs-4 fw-bold mb-3">Get Your Free Consultation</h3>
+                                    <p class="fs-5 text-secondary mb-5">Fill out the form and we'll get back to you within 24 hours with a personalized proposal.</p>
+                                    <form>
+                                        <div class="row g-4">
+                                            <div class="col-lg-6 my-3">
+                                                <label for="firstname" class="fw-semibold mb-2">First Name *</label>
+                                                <input type="text" name="firstname" id="firstname" placeholder="John" required autocomplete="off"
+                                                class="form-control  p-3 rounded-4">
+                                            </div>
+                                            <div class="col-lg-6 my-3">
+                                                <label for="lastname" class="fw-semibold mb-2">Last Name *</label>
+                                                <input type="text" name="lastname" id="lastname" placeholder="Doe" required autocomplete="off"
+                                                class="form-control p-3 rounded-4">
+                                            </div>
+                                            <div class="col-lg-6 my-3">
+                                                <label for="email" class="fw-semibold mb-2">Email Address*</label>
+                                                <input type="email" name="email" id="email" placeholder="john@company.com" required autocomplete="off"
+                                                class="form-control p-3 rounded-4">
+                                            </div>
+                                            <div class="col-lg-6 my-3">
+                                                <label for="company" class="fw-semibold mb-2">Company</label>
+                                                <input type="text" name="company" id="company" placeholder="Your Company Name" autocomplete="off"
+                                                class="form-control p-3 rounded-4">
+                                            </div>
+                                            <div class="col-12 my-3">
+                                                <label for="primInterest" class="fw-semibold mb-2">Primary Interest</label>
+                                                <div class="select-wrapper position-relative">
+                                                    <select name="primInterest" id="primInterest" class="form-control p-3 rounded-4">
+                                                        <option selected value="none">Choose your focus area</option>
+                                                        <option value="option">Web Development & Design</option>
+                                                        <option value="option2">Mobile App Development</option>
+                                                        <option value="option3">Cloud & Infrastructure</option>
+                                                        <option value="option4">AI & Machine Learning</option>
+                                                        <option value="option5">Digital Marketing and SEO</option>
+                                                        <option value="option6">Complete Digital Transformation</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 my-3">
+                                                <label for="timeline" class="fw-semibold mb-2">Timeline</label>
+                                                <div class="select-wrapper position-relative">
+                                                    <select name="timeline" id="timeline" class="form-control p-3 rounded-4">
+                                                        <option value="none">When do you want to start?</option>
+                                                        <option value="option">Immediately</option>
+                                                        <option value="option2">Within 1 Month</option>
+                                                        <option value="option3">Within 3 Month</option>
+                                                        <option value="option4">Within 6 Month</option>
+                                                        <option value="option5">Just exploring options</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 my-3">
+                                                <h4 class="fs-6 mb-3 fw-semibold">Project Budget Range</h4>
+                                                <div class="budget-options">
+                                                    <div class="row gy-3">
+                                                        <div class="col-md-4 col-12">
+                                                            <div class="choice text-center">
+                                                                <input type="radio" name="budget" id="growth" value="$25K - $50K" class="d-none">
+                                                                <label for="growth" class="p-4 rounded-4">
+                                                                    <strong>$25K - $50K</strong><br>
+                                                                    <span class="text-secondary">Growth</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-12">
+                                                            <div class="choice text-center">
+                                                                <input type="radio" name="budget" id="scale" value="$50K - $100K" class="d-none">
+                                                                <label for="scale" class="p-4 rounded-4">
+                                                                    <strong>$50K - $100K</strong><br>
+                                                                    <span class="text-secondary">Scale</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-12">
+                                                            <div class="choice text-center">
+                                                                <input type="radio" name="budget" id="enterprise" value="$100K+" class="d-none">                                       
+                                                                <label for="enterprise" class="p-4 rounded-4">
+                                                                    <strong>$100K+</strong><br>
+                                                                    <span class="text-secondary">Enterprise</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 my-3">
+                                                <label for="about-project" class="fw-semibold mb-3">Tell us about your project</label>
+                                                <textarea class="w-100 p-4 rounded-4 form-control" rows="5" name="about-project" id="about-project"
+                                                placeholder="Describe your project goals, challenges, and what success looks like for you..."></textarea>
+                                            </div>
+                                            <div class="col-12 d-flex gap-3 mt-4">
+                                                <input type="checkbox" name="terms" id="terms" required>
+                                                <label for="terms">
+                                                    I agree to receive communications and accept the <span class="privacy">Privacy Policy</span>
+                                                </label>
+                                            </div>
+                                            <div class="col-12">
+                                                <button>
+                                                    Get My Free Consultation
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 contact-form-right-bg">
+                                <div class="right py-5 px-4 mb-4 text-white">
+                                    <h4 class="fw-bold text-white mb-4">Why Choose Clarity?</h4>
+                                    <div class="top d-flex flex-column gap-3">
+                                        <div class="item d-flex gap-3 align-items-start justify-content-between">
+                                            <i class="fa-solid fa-clock"></i>
+                                            <div class="details">
+                                                <h5 class="fs-6">24-Hour Response</h5>
+                                                <p>Quick turnaround on all inquiries with detailed project analysis</p>
+                                            </div>
+                                        </div>
+                                        <div class="item d-flex gap-3 align-items-start justify-content-between">
+                                            <i class="fa-solid fa-shield-halved"></i>
+                                            <div class="details">
+                                                <h5 class="fs-6">100% Satisfaction</h5>
+                                                <p>Money-back guarantee if you're not completely satisfied</p>
+                                            </div>
+                                        </div>
+                                        <div class="item d-flex gap-3 align-items-start justify-content-between mb-3">
+                                            <i class="fa-solid fa-users"></i>
+                                            <div class="details">
+                                                <h5 class="fs-6">Expert Team</h5>
+                                                <p>150+ certified professionals with 8+ years experience</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom mt-4 text-white">
+                                        <h5 class="fs-6 fw-semibold mb-4">Direct Contact</h5>
+                                        <p>
+                                            <i class="fa-solid fa-phone me-2"></i>
+                                            <span>+1 (555) 123-4567</span>
+                                        </p>
+                                        <p>
+                                            <i class="fa-solid fa-envelope me-2"></i>
+                                            <span>hello@clarity.com</span>
+                                        </p>
+                                        <p>
+                                            <i class="fa-solid fa-location-dot me-2"></i>
+                                            <span>San Francisco, CA</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------------ End Contact Section ------------------------------ -->
+
+
     </main>
 
 

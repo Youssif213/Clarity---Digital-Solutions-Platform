@@ -568,3 +568,320 @@ header{
 }
 
 /* ------------------------------ End Technology Section ------------------------------ */
+
+
+
+
+/* ------------------------------ Start Testimonials Section ------------------------------ */
+#testimonials{
+    background-color: #FDF9F4;
+}
+#testimonials .carousel-indicators{
+    bottom: -60px;
+    margin-bottom: 0px;
+}
+#testimonials .content .carousel-indicators [data-bs-target] {
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin-inline: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: #D1D5DC;
+    opacity: 1;
+
+    transition: all 0.3s ease;
+}
+
+#testimonials .content .carousel-indicators [data-bs-target]:hover {
+    width: 40px;
+    border-radius: 20px;
+    background-color: #F3A87E;
+}
+
+#testimonials .content .carousel-indicators [data-bs-target].active{
+    background-color: #EA580C;
+}
+
+#testimonials .content .carousel-inner{
+    border-radius: 20px;
+}
+#testimonials .content .head .fa-quote-left{
+    width: 60px;
+    height: 60px;
+    background-color: #FBEDE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+#testimonials .content .head > span{
+    background-color: #FBEDE7;
+}
+
+#testimonials .content .for-separator::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: inline-block;
+    background-image: linear-gradient(to right, transparent 0%, #ccc 50%, transparent 100%);
+}
+
+#testimonials .foot .left, #testimonials .foot .right{
+    width: fit-content;
+}
+#testimonials .foot .left .pfp{
+    width: fit-content;
+    height: fit-content;
+}
+#testimonials .foot .left .img-holder{
+    width: 100px;
+    height: 100px;
+}
+#testimonials .foot .left img{
+    border-color: var(--main-color-light);
+}
+#testimonials .foot .left .pfp i{
+    width: 25px;
+    height: 25px;
+    background-color: var(--main-color-light);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px white solid;
+    bottom: -5px;
+    right: -5px;
+}
+#testimonials .linkedin-verify{font-size: 14px;}
+#testimonials .right .badge{
+    background-image: linear-gradient(to right, #E8570C, #C4430D);
+    background-clip: text;
+    color: transparent;
+}
+#testimonials .item{
+    background: white;
+    transition: all 0.3s ease;
+}
+#testimonials .item:hover{
+    background: linear-gradient(135deg, #FEF7F4 0%, white 50%, #FEF7F4 100%);
+}
+#testimonials .item:hover .head .fa-quote-left{
+    transform: scale(1.1);
+}
+/* ------------------------------ End Testimonials Section ------------------------------ */
+
+
+
+
+
+/* ------------------------------ Start FAQ Section ------------------------------ */
+#faq .accordion-button:focus{
+    box-shadow: none;
+}
+#faq .accordion-item{
+    margin-block: 24px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+#faq .accordion-item:hover{
+    border-color: var(--main-color-light);
+}
+#faq .accordion-item .accordion-button{
+    background-color: transparent;
+    color: var(--main-color-dark);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+#faq .accordion-item:hover .accordion-button.collapsed,
+#faq .accordion-item:hover .accordion-button:not(.collapsed){
+    background-color: #F9FAFB;
+}
+
+
+.accordion-item:first-of-type .accordion-button.collapsed{
+    border-radius: 15px;
+}
+.accordion-item:not(:first-of-type) .accordion-button.collapsed{
+    border-radius: 15px;
+}
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed{
+    border-radius: 15px;
+}
+
+.accordion-item:first-of-type .accordion-button:not(.collapsed){
+    border-radius: 15px 15px 0px 0px;
+}
+.accordion-item:not(:first-of-type) .accordion-button:not(.collapsed){
+    border-radius: 15px 15px 0px 0px;
+}
+.accordion-item:last-of-type>.accordion-header .accordion-button:not(.collapsed){
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    content: "\f107";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-image: none;
+    background-color: #F6E9E3;
+    color: var(--main-color-light);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+
+.accordion{
+    --bs-accordion-border-color: none;
+}
+/* ------------------------------ End FAQ Section ------------------------------ */
+
+
+
+
+/* ------------------------------ Start Contact Section ------------------------------ */
+#contact{
+    background-image: linear-gradient(135deg, #FDEEE8 0%, white 50%, #FDEEE8 100%);
+}
+
+#contact h2{
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+}
+#contact .header p{
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+
+#contact .form{
+    width: 80%;
+}
+
+#contact form input,
+#contact form label,
+#contact form textarea,
+#contact form select{
+    display: block;
+}
+
+#contact input, #contact select{
+    background-color: #F3F4F6;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+#contact select option{
+    background-color: white;
+}
+#contact .form-control:focus{
+    border: 2px solid var(--main-color-light);
+    box-shadow: 0 0 0 0.3rem rgba(255, 69, 0,0.1);
+}
+#contact .select-wrapper::after{
+    display: inline-block;
+    content: "\f107";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    color: #99A1AF;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 25px;
+}
+
+#contact textarea{resize: none;}
+
+#contact .budget-options .choice label{
+    border: 2px solid #ccc;
+    transition: all 0.3s;
+}
+#contact .budget-options .choice label:hover{
+    border-color: #a2a2a2;
+    cursor: pointer;
+}
+#contact .budget-options input:checked + label {
+    border-color: var(--main-color-light);
+    background-color: #FEF6F3;
+}
+.budget-options .choice input:checked + label strong{
+    color: var(--main-color-light);
+}
+
+#contact .form textarea{
+    border: none;
+    background-color: #F3F4F6;
+    transition: all 0.5s;
+}
+#terms{
+    width: 20px;
+}
+#terms:checked{
+    accent-color: var(--main-color-light);
+    box-shadow: 0px 0px 0px 2px rgba(255, 69, 0,0.2);
+}
+#contact .privacy{
+    color: var(--main-color-light);
+}
+#contact .privacy:hover{
+    text-decoration: underline;
+}
+
+#contact .form button{
+    border: none;
+    padding-block: 20px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    line-height: 28px;
+    font-weight: 700;
+    color: white;
+    width: 100%;
+    background-image: linear-gradient(to right, #EA580C 0%, #C7440C 40%, #FA913C 100%);
+    transition: all 0.3s;
+}
+#contact .form button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 10px 0px rgba(255, 69, 0,0.3);
+}
+.contact-form-right-bg{
+    background-color: #C0440B;
+}
+
+#contact .right .item i{
+    width: 78px;
+    height: 50px;
+    background-color: #CB6B3B;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .right .item p{
+    font-size: 14px;
+    color: #ccc;
+}
+#contact .right .top{
+    border-bottom: 1px solid #ababab;
+}
+#contact .right .bottom p{
+    font-size: 14px;
+}
+
+
+/* ------------------------------ End Contact Section ------------------------------ */
