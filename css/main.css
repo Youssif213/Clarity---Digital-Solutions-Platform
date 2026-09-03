@@ -10,7 +10,7 @@
 .bg-main-light{background-color: var(--main-color-light);}
 .bg-main-dark{background-color: var(--main-color-dark);}
 
-section{
+section,footer{
     padding-block: 100px;
 }
 
